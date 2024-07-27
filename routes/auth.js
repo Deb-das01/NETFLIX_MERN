@@ -34,6 +34,7 @@ router.post("/login", async (req, res) => {
   try {
     // Below code checks wether the requested user is present in the database or not 
     //if not it sends a error message
+      console.log("hi im swasti");
     const user = await User.findOne({ email: req.body.email });
     if (!user) {
       return res.status(401).json("Wrong password or username!");
