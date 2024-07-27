@@ -23,7 +23,7 @@ mongoose.connect(process.env.MONGO_URL, {
 // Here, it is configured to allow requests from 'http://localhost:3000' (your frontend URL)
 // It also specifies allowed HTTP methods and enables cookies to be sent with requests
 app.use(cors({
-    origin: 'https://netflix-client-1q99lqqkl-deb-das01s-projects.vercel.app', // Adjust this to your frontend's URL
+    origin: 'https://netflix-client-orpin.vercel.app', // Adjust this to your frontend's URL
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allowed HTTP methods
     credentials: true, // Allow cookies to be sent with the requests
 }));
